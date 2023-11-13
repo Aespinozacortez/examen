@@ -11,6 +11,10 @@
  include "../src/controllers/ctrlDoInscripcio.php";
  include "../src/controllers/ctrlDades.php";
  include "../src/controllers/ctrlConsultas.php";
+ include "../src/controllers/ctrlSeguridad.php";
+ include "../src/controllers/ctrlpass.php";
+
+
 
 
 
@@ -52,7 +56,12 @@
   $response = ctrlDades($request, $response, $container);
 }elseif($r == "consultas") {
   $response = ctrlConsultas($request, $response, $container);
+}elseif($r == "seguridad") {
+  $response = ctrlSeguridad($request, $response, $container);
+}elseif($r == "ctrlpass") {
+  $response = ctrlpass($request, $response, $container);
 }
+
 
 
 

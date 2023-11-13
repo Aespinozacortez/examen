@@ -12,6 +12,7 @@
         "host" => "localhost"
     ],
 ];
+
 include "../src/models/Db.php";
 include "../src/models/Users.php";
 

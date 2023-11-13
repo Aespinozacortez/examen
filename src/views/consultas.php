@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css" />
+    <link href="../../css/web.css" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <title>Document</title>
+    <title>Consultas</title>
 </head>
 <body>
-    <div id="contenido-historial" class="col-12 text-white">
-        <h1 class="d-flex align-items-center justify-content-center mt-4 mb-4">Historial Reserves</h1>
-        <table class="table table-striped table-hover" id="historialReserves">
+    <div class="col-12">
+        <h1 class="d-flex align-items-center justify-content-center mt-4 mb-4">Consulta d’inscripcions</h1>
+        <table class="table table-striped table-hover"">
             <thead>
                 <tr class="table-dark">
                     <th scope="col">Id Resguard</th>
