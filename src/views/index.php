@@ -35,7 +35,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae pariatur ex, laborum voluptates a nesciunt, tempore exercitationem molestiae ut dicta sit consequuntur ratione voluptatem, libero soluta dolores voluptas blanditiis?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae pariatur ex, laborum voluptates a nesciunt, tempore exercitationem molestiae ut dicta sit consequuntur ratione voluptatem, libero soluta dolores voluptas blanditiis?</p>
       <p>inscriu-te:</p>
-      <a href="index.php?r=inscripcio">Formulari</a>
+      <a id="link" href="index.php?r=inscripcio">Formulari</a>
     </div>
     
   </div>

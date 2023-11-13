@@ -11,47 +11,47 @@
 <body>
 <div class="form">
     <h1>INSCRIPCIO</h1>
-    <form action="index.php" method="post" class="form">
+    <form action="index.php" method="post" class="form" enctype="multipart/form-data">
         <input type="hidden" name="r" value="doinscripcio">
 
         <div class="row">
             <div class="col-md-6">
-                <label class="form-label">Nom</label>
-                <input type="text" name="Nom" class="form-control">
+                <label for="Nom" class="form-label">Nom</label>
+                <input type="text" name="Nom" id="Nom" class="form-control" required aria-labelledby="NomLabel">
             </div>
             <div class="col-md-6">
-                <label class="form-label">Cognoms</label>
-                <input type="text" name="Cognoms" class="form-control">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <label class="form-label">Data de naixement</label>
-                <input type="text" name="Data" class="form-control">
-            </div>
-
-            <div class="col-md-6">
-                <label class="form-label">Carrer</label>
-                <input type="text" name="Carrer" class="form-control">
+                <label for="Cognoms" class="form-label">Cognoms</label>
+                <input type="text" name="Cognoms" id="Cognoms" class="form-control" required aria-labelledby="CognomsLabel">
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-6">
-                <label class="form-label">Ciutat</label>
-                <input type="text" name="Ciutat" class="form-control">
+                <label for="Data" class="form-label">Data de naixement</label>
+                <input type="text" name="Data" id="Data" class="form-control" required aria-labelledby="DataLabel">
             </div>
 
             <div class="col-md-6">
-                <label class="form-label">Codi Postal</label>
-                <input type="number" name="Postal" class="form-control">
+                <label for="Carrer" class="form-label">Carrer</label>
+                <input type="text" name="Carrer" id="Carrer" class="form-control" required aria-labelledby="CarrerLabel">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <label for="Ciutat" class="form-label">Ciutat</label>
+                <input type="text" name="Ciutat" id="Ciutat" class="form-control" required aria-labelledby="CiutatLabel">
+            </div>
+
+            <div class="col-md-6">
+                <label for="Postal" class="form-label">Codi Postal</label>
+                <input type="number" name="Postal" id="Postal" class="form-control" required aria-labelledby="PostalLabel">
             </div>
         </div>
 
         <div class="mb-3">
-            <label for="formFile" class="form-label">Resguard de Pagament</label>
-            <input class="form-control" type="file" id="formFile">
+            <label for="resguardPagament" class="form-label">Resguard de Pagament</label>
+            <input class="form-control" type="file" name="resguardPagament" id="resguardPagament" aria-labelledby="ResguardPagamentLabel">
         </div>
         <button class="submit">Continuar</button>
     </form>

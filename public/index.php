@@ -9,6 +9,10 @@
  include "../src/controllers/ctrlJson.php";
  include "../src/controllers/ctrlInscripcio.php";
  include "../src/controllers/ctrlDoInscripcio.php";
+ include "../src/controllers/ctrlDades.php";
+ include "../src/controllers/ctrlConsultas.php";
+
+
 
 
 
@@ -44,6 +48,10 @@
   $response = ctrlInscripcio($request, $response, $container);
 }elseif($r == "doinscripcio") {
   $response = ctrldoinscripcio($request, $response, $container);
+}elseif($r == "dades") {
+  $response = ctrlDades($request, $response, $container);
+}elseif($r == "consultas") {
+  $response = ctrlConsultas($request, $response, $container);
 }
 
 

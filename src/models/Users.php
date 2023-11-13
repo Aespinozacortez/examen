@@ -20,9 +20,15 @@ class Users {
             ':Ciutat' => $Ciutat,
             ':Postal' => $Postal
         ]);
-    
-        return $result;
+        $ID_Usuari = $this->sql->lastInsertId();
+
+        return $ID_Usuari;
     }
-    
+    public function all() {
+    $selectStmt = $this->sql->prepare('SELECT * FROM usuari');
+    $selectStmt->execute();
+    $result = $selectStmt->fetchAll(\PDO::FETCH_ASSOC);
+    return $result;
+    }
 
 }
