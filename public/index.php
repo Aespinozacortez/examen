@@ -7,6 +7,10 @@
  include "../src/config.php";
  include "../src/controllers/ctrlIndex.php";
  include "../src/controllers/ctrlJson.php";
+ include "../src/controllers/ctrlInscripcio.php";
+ include "../src/controllers/ctrlDoInscripcio.php";
+
+
 
 /**
   * Carreguem les classes del Framework Emeset
@@ -36,7 +40,16 @@
      $response = ctrlIndex($request, $response, $container);
  } elseif($r == "json") {
   $response = ctrlJson($request, $response, $container);
-} else {
+}elseif($r == "inscripcio") {
+  $response = ctrlInscripcio($request, $response, $container);
+}elseif($r == "doinscripcio") {
+  $response = ctrldoinscripcio($request, $response, $container);
+}
+
+
+
+
+else {
      echo "No existeix la ruta";
  }
 

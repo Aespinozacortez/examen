@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 10px;
+    background-color: aqua;
+    align-items: center;
+}
+
+.carousel {
+    max-width: 500px;
+    max-height: 300px; 
+    margin: auto;
+    display: flex;
+}
+.form{
+    width: 400px;
+}
