@@ -2,11 +2,11 @@
 
 function ctrlpass($request, $response, $container){
     $pass = $request->get(INPUT_GET,"pass");
-    $password = "123";
-
-    if($pass==$password){
+    $code = "123";
+    
+    if($pass==$code){
         $response->setSession("identified",true);
     }else{
-        http_response_code(500);    }
+        http_response_code(500);}
     die();
 }

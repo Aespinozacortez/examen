@@ -58,7 +58,7 @@
   $response = ctrlConsultas($request, $response, $container);
 }elseif($r == "seguridad") {
   $response = ctrlSeguridad($request, $response, $container);
-}elseif($r == "ctrlpass") {
+}elseif($r == "identificar") {
   $response = ctrlpass($request, $response, $container);
 }
 

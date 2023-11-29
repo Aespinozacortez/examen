@@ -6,37 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form id="loginForm">
-    <input type="hidden" name="r" value="ctrlpass">
-
-        <div class="col-md-6">
-            <label for="password" class="form-label">Contraseña</label>
-            <input type="password" id="password" name="password" class="form-control" required aria-labelledby="passwordLabel">
-        </div>
         <p id="mensajeError"></p>
-        <div class="col-md-6">
-            <button type="button" onclick="validatePassword()">Continuar</button>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="contrasenya">
         </div>
-    </form>
+        <button onclick="access()">Aceptar</button>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-        function inscripcio(pass) {
-    var pass = $("#password").val();
-                $.ajax({
-                    url: "index.php?r=accessinscripcio",
-                    method: "GET",
-                    data: { pass: pass },
-                    success: function (data) {
-                        window.location = "index.php?r=seeinscripcio";        },
-                    error: function (error) {
-                        $("#mensajeError").html("Contrasenya incorrecta.");
-                        // Muestra el div
-                        $("#mensajeError").show();
-                    }
-                });
-            }
-    </script>
+    <script src="../../js/app.js"></script>
+
 </body>
 </html>
-
-

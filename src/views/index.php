@@ -37,13 +37,31 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae pariatur ex, laborum voluptates a nesciunt, tempore exercitationem molestiae ut dicta sit consequuntur ratione voluptatem, libero soluta dolores voluptas blanditiis?</p>
       <p>inscriu-te:</p>
       <a id="link" href="index.php?r=inscripcio">Formulari</a>
-      <a id="link" href="index.php?r=seguridad">Consultas</a>
-
+      <a id="link2" href="index.php?r=seguridad">Consultas</a>
     </div>
-    
   </div>
+
+
+  <div class="modal" tabindex="-1" id="cookieModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Política de Cookies</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al continuar utilizando este sitio, aceptas el uso de cookies de acuerdo con nuestra política de privacidad.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="aceptarCookies()">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script></body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="../../js/app.js"></script>  
+
 </body>
 </html>
